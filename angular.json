@@ -9,6 +9,18 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
+      "i18n": {
+        "sourceLocale": {
+          "code": "en",
+          "subPath": ""
+        },
+        "locales": {
+          "de": {
+            "translation": "messages.de.xlf",
+            "subPath": "de"
+          }
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
@@ -31,6 +43,10 @@
               "src/styles.css"
             ],
             "scripts": [],
+            "localize": [
+              "en",
+              "de"
+            ],
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {
