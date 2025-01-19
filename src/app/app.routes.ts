@@ -3,10 +3,6 @@ import { TestComponent } from './test/test.component';
 
 export const routes: Routes = [
   {
-    path: '',
-    component: TestComponent,
-  },
-  {
     path: '**',
     component: TestComponent,
   },
